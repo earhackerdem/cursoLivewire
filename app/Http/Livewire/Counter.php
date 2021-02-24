@@ -6,7 +6,16 @@ use Livewire\Component;
 
 class Counter extends Component
 {
-    public $count = 0;
+    public $count;
+
+    public $titulo;
+    public $descripcion;
+
+    public function mount($data)
+    {
+        $this->titulo = $data['titulo'];
+        $this->descripcion = $data['descripcion'];
+    }
 
     public function render()
     {

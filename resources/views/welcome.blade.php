@@ -16,7 +16,7 @@
     @livewireStyles
 </head>
 <body>
-    <livewire:counter>
+    <livewire:paises />
     @livewireScripts
 </body>
 </html>
