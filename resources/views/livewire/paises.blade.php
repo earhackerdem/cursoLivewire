@@ -1,9 +1,14 @@
 <div>
     <h1>Lista de países</h1>
 
-    <input type="text" placeholder="Escribir nuevo país" wire:model="pais">
+    <form action="" wire:submit.prevent="agregar">
+        <input type="text" placeholder="Escribir nuevo país" wire:model="pais">
+        <button type="submit">Enviar</button>
+    </form>
 
-    <button wire:click="agregar">Enviar</button>
+
+
+
 
     <ul>
         @foreach ($paises as $pais)
